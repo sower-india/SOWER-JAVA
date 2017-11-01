@@ -3,3 +3,5 @@
 .settings
 *.class
 .DS_Store
+MANIFEST.MF
+pom.properties
