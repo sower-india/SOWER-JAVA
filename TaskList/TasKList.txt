@@ -1,0 +1,19 @@
+Following are the tasks
+
+1) Registration for User   -- SAINAGARAJU
+2) Registration for FARMER  -- BHARATH
+3) Registration for CUSTOMER -- SURESH TEAM
+4) Registration for TRANSPORT -- SURESH TEAM
+5) Registration for the DELIVERY BOY  -- SURESH TEAM
+6) RDBMS Service integration with Hibernate using spring --- BHARATH
+
+
+Following are the schema requirements
+
+1) User
+2) FARMER
+3) CUSTOMER
+4) TRANSPORT
+5) DELIVERY BOY
+
+
