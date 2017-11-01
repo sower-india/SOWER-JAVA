@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11 Jul, 2016 2:10:29 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.controlprocess.pojo.ControlProcessDetail" table="CONTROL_PROCESS_DETAIL">
+        <id name="controlProcessDetailId" type="long">
+            <column name="CONTROL_PROCESS_DETAIL_ID" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="controlProcess" class="com.controlprocess.pojo.ControlProcess" fetch="join">
+            <column name="CONTROL_PROCESS_ID" />
+        </many-to-one>
+        <property name="baseControlFileNameWithLoc" type="java.lang.String">
+            <column name="BASECONTROLFILENAMEWITHLOC" />
+        </property>
+        <property name="baseDatFileNameWithLoc" type="java.lang.String">
+            <column name="BASEDATFILENAMEWITHLOC" />
+        </property>
+        <property name="baseMetaFileNameWithLoc" type="java.lang.String">
+            <column name="BASEMETAFILENAMEWITHLOC" />
+        </property>
+             <property name="destControlFileNameWithLoc" type="java.lang.String">
+            <column name="DESTCONTROLFILENAMEWITHLOC" />
+        </property>
+        <property name="destDatFileNameWithLoc" type="java.lang.String">
+            <column name="DESTDATFILENAMEWITHLOC" />
+        </property>
+        <property name="destMetaFileNameWithLoc" type="java.lang.String">
+            <column name="DESTMETAFILENAMEWITHLOC" />
+        </property>
+        
+        <property name="hdfsCtlFileLoc" type="java.lang.String">
+            <column name="HDFSCTLFILELOC" />
+        </property>
+        <property name="hdfsMetaFileLoc" type="java.lang.String">
+            <column name="HDFSMETAFILELOC" />
+        </property>
+        <property name="hdfsDatFileLoc" type="java.lang.String">
+            <column name="HDFSDATFILELOC" />
+        </property>
+        <property name="schemaValidation" type="java.lang.String">
+            <column name="SCHEMAVALIDATION" />
+        </property>
+        <property name="rowCountValidation" type="java.lang.String">
+            <column name="ROWCOUNTVALIDATION" />
+        </property>
+        <property name="crcValidation" type="java.lang.String">
+            <column name="CRCVALIDATION" />
+        </property>
+        <property name="ctlRowCountExist" type="boolean">
+            <column name="CTLROWCOUNTEXIST" />
+        </property>
+        <property name="ctlRowCount" type="long">
+            <column name="CTLROWCOUNT" />
+        </property>
+        <property name="computedRowCount" type="long">
+            <column name="COMPUTEDROWCOUNT" />
+        </property>
+        <property name="detailLogFileLoc" type="java.lang.String">
+            <column name="DETAILLOGFILELOC" />
+        </property>
+        <property name="insertedDate" type="java.sql.Timestamp">
+            <column name="INSERTEDDATE" />
+        </property>
+        <property name="updatedDate" type="java.sql.Timestamp">
+            <column name="UPDATEDDATE" />
+        </property>
+           <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

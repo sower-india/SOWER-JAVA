@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11 Jul, 2016 2:10:29 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.controlprocess.pojo.ControlProcess" table="CONTROL_PROCESS">
+        <id name="id" type="long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="controlProcessId" type="java.lang.String">
+            <column name="CONTROL_PROCESS_ID" />
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="startTime" type="java.sql.Timestamp">
+            <column name="START_TIME" />
+        </property>
+        <property name="endTime" type="java.sql.Timestamp">
+            <column name="END_TIME" />
+        </property>
+        <property name="processType" type="java.lang.String">
+            <column name="PROCESS_TYPE" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <set name="detail" table="CONTROL_PROCESS_DETAIL" cascade="save-update" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CONTROL_PROCESS_ID" not-null="true"/>
+            </key>
+            <one-to-many class="com.controlprocess.pojo.ControlProcessDetail" />
+        </set>
+    </class>
+</hibernate-mapping>
