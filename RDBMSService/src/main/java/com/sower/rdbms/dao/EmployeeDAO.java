@@ -1,8 +1,8 @@
-package com.vodafone.rdbms.dao;
+package com.sower.rdbms.dao;
 
 import java.util.List;
 
-import com.vodafone.rdbms.pojo.Employee;
+import com.sower.rdbms.pojo.Employee;
 
 public interface EmployeeDAO {
 

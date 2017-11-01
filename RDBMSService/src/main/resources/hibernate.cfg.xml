@@ -28,8 +28,8 @@
 
 		<property name="hbm2ddl.auto">validate</property>
 
-		<mapping resource="com/vodafone/rdbms/pojo/ControlProcess.hbm.xml" />
-		<mapping resource="com/vodafone/rdbms/pojo/ControlProcessDetail.hbm.xml" />
+		<mapping resource="com/sower/rdbms/pojo/ControlProcess.hbm.xml" />
+		<mapping resource="com/sower/rdbms/pojo/ControlProcessDetail.hbm.xml" />
 
 	</session-factory>
 </hibernate-configuration>

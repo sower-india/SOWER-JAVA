@@ -1,4 +1,4 @@
-package com.vodafone.rdbms.util;
+package com.sower.rdbms.util;
  
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

@@ -1,10 +1,8 @@
-package com.vodafone.rdbms.test;
+package com.sower.rdbms.dao;
 
 import java.sql.Date;
 
-import com.vodafone.rdbms.dao.HibernateDAO;
-import com.vodafone.rdbms.pojo.Employee;
-
+import com.sower.rdbms.pojo.Employee;
 
 public class TestHibernate {
 
@@ -13,6 +11,7 @@ public class TestHibernate {
 	 */
 	public static void main(String[] args) {
 
+//		Hiber
 		
 		System.out.println("******* WRITE *******");
 		Employee empl = new Employee("Jack", "Bauer", new Date(System.currentTimeMillis()), "911");

@@ -1,10 +1,10 @@
-package com.vodafone.rdbms.pojo;
+package com.sower.rdbms.pojo;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import com.vodafone.rdbms.util.HibernateUtil;
+import com.sower.rdbms.util.HibernateUtil;
 
 public class EmployeeDetails {
 

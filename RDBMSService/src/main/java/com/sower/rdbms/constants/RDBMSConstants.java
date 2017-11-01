@@ -1,4 +1,4 @@
-package com.vodafone.rdbms.constants;
+package com.sower.rdbms.constants;
 
 public enum RDBMSConstants {
 	

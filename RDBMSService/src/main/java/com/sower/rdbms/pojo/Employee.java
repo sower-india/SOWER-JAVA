@@ -1,4 +1,4 @@
-package com.vodafone.rdbms.pojo;
+package com.sower.rdbms.pojo;
 
 import java.sql.Date;
 
