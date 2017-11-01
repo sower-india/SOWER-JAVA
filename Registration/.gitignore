@@ -1,1 +1,8 @@
 /target/
+.classpath
+.settings
+*.class
+.DS_Store
+MANIFEST.MF
+pom.properties
+*META-INF*
